@@ -1,6 +1,7 @@
 // This is a Random Number Generator Program
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 int main()
 {
 int n;
@@ -13,6 +14,7 @@ for (i=1; i<=31; i++)
 	printf("\t%d", n);
 }
 */
+srand (time(NULL));
 n=rand()%31 + 1;
 printf("\t%d", n);
 
